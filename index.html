@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom audio player on js</title>
+     <link rel="stylesheet" href="styles/css/main.min.css">
+     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="bg">
+        <div id="blackLayer"></div>
+        <img src="img/Poster.png"/>
+    </div>
+   
+    <div id="main">
+        <div id="image">
+            <img src="img/Poster.png"/>
+        </div>
+        <div id="player">
+            <div id="songTitle">Demo</div>
+            <div id="buttons">
+                <button id="pre" onclick="pre()"><img src="img/Pre.png" height="90%" width="90%"/></button>
+                <button id="play" onclick="playOrPauseSong()"><img src="img/Play.png"/></button>
+                <button id="next" onclick="next()"><img src="img/Next.png" height="90%" width="90%"/></button>
+            </div>
+            
+            <div id="seek-bar">
+                <div id="fill"></div>
+                <div id="handle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
